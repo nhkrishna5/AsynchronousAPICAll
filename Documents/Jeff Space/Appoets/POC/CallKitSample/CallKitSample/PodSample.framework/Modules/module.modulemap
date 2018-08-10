@@ -1,0 +1,11 @@
+framework module PodSample {
+  umbrella header "PodSample.h"
+
+  export *
+  module * { export * }
+}
+
+module PodSample.Swift {
+    header "PodSample-Swift.h"
+    requires objc
+}
