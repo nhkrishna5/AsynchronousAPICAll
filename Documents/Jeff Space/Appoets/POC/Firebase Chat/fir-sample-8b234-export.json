@@ -1,0 +1,220 @@
+{
+  "1234567890" : {
+    "-L6g3rMHva-87O5BufhD" : {
+      "read" : "1",
+      "sender" : "5678",
+      "text" : "Hi",
+      "timestamp" : "1520084153.97518",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g3sq5gYpauvfFSsOa" : {
+      "read" : "0",
+      "sender" : "5678",
+      "text" : "Hgjhj",
+      "timestamp" : "1520084160.04344",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g3thia4SZ5CiyaoW_" : {
+      "read" : "1",
+      "sender" : "5678",
+      "text" : "Hj",
+      "timestamp" : "1520084163.60359",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g3ufGrcBSPfRPJOsC" : {
+      "read" : "1",
+      "sender" : "5678",
+      "text" : "Uuu",
+      "timestamp" : "1520084167.54251",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g3vuNCRuHHdvBj6lj" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Hj",
+      "timestamp" : "1520084172.60284",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g3wqveHy5ly5oYt6o" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Houh",
+      "timestamp" : "1520084176.47741",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4VstXFZ6ZdbAaDF8" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Bbbj",
+      "timestamp" : "1520084324.07188",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4X843it-Q1zlhkOZ" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "Ghg",
+      "timestamp" : "1520084329.20392",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4YmWc80QLalajKDM" : {
+      "read" : "1",
+      "sender" : "5678",
+      "text" : "Hi",
+      "timestamp" : "1520084335.94266",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g4_jgTQHEgjHyfuPH" : {
+      "read" : "1",
+      "sender" : "5678",
+      "text" : "Hui",
+      "timestamp" : "1520084343.95337",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6g4btuGewflqXFycZB" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Jk",
+      "timestamp" : "1520084352.80929",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4p2IheTFZp2sNcFK" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "Y",
+      "timestamp" : "1520084406.63771",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4qPYcYN5ma0wL41K" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Gh",
+      "timestamp" : "1520084412.24184",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g4zqk6vXlKp1Zp0Y7" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "Hih",
+      "timestamp" : "1520084450.89099",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g50akbbXvTy2nS232" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Fg",
+      "timestamp" : "1520084458.05564",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g51ERS7qoW_RMjqWO" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "B",
+      "timestamp" : "1520084460.66029",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g51w5pjjKZ_xilI9o" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "Hj",
+      "timestamp" : "1520084463.5176",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g7vQik2ZsG_6nK7YL" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "G",
+      "timestamp" : "1520085219.20889",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g7xalr4YUai8ZWeCw" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Hhh",
+      "timestamp" : "1520085228.20142",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g7yhTXhMW1RZGeqzq" : {
+      "read" : "1",
+      "sender" : "1234",
+      "text" : "Nk",
+      "timestamp" : "1520085232.72731",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6g87O0WEUNM7fyUN3w" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "C",
+      "timestamp" : "1520085272.37801",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6gBmngo1TEDbQqGEV0" : {
+      "read" : "0",
+      "sender" : "5678",
+      "text" : "etety",
+      "timestamp" : "1520086232.43988",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    },
+    "-L6gBoJA7jBPPN-QmxcV" : {
+      "read" : "0",
+      "sender" : "1234",
+      "text" : "Hi",
+      "timestamp" : "1520086238.74172",
+      "type" : "text",
+      "url" : "",
+      "user" : "5678"
+    },
+    "-L6gBpWC8tymihxcylJy" : {
+      "read" : "0",
+      "sender" : "5678",
+      "text" : "Gfgrgr",
+      "timestamp" : "1520086243.54558",
+      "type" : "text",
+      "url" : "",
+      "user" : "1234"
+    }
+  }
+}

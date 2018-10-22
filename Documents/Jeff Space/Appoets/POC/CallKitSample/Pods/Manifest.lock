@@ -1,0 +1,16 @@
+PODS:
+  - JeffSamplePod (4.0.1)
+
+DEPENDENCIES:
+  - JeffSamplePod
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JeffSamplePod
+
+SPEC CHECKSUMS:
+  JeffSamplePod: b50ca1cd840e4768ca4c3e31797d57ca657b2723
+
+PODFILE CHECKSUM: 784b29c5c095427b140427bc0ac530b07b3c8eda
+
+COCOAPODS: 1.5.3

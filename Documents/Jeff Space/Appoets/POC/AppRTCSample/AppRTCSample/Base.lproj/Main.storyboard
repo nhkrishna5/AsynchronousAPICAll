@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8US-Le-ni6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppRTCSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="32"/>
+        </scene>
+        <!--Video Chat View Controller-->
+        <scene sceneID="7m4-YX-PfF">
+            <objects>
+                <viewController id="8US-Le-ni6" customClass="RTCVideoChatViewController" customModule="AppRTCSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VnX-gY-1z9"/>
+                        <viewControllerLayoutGuide type="bottom" id="L65-qy-cLf"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Hnf-We-kpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-64-dJ9" userLabel="Remote View" customClass="RTCEAGLVideoView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.32584697010000002" green="0.32583719490000002" blue="0.32584273819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="wf6-4b-DRe" userLabel="Local View" customClass="RTCEAGLVideoView">
+                                <rect key="frame" x="227" y="519" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.15056313569999999" green="0.15055863559999999" blue="0.15056121350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="X2Y-ka-DkA"/>
+                                    <constraint firstAttribute="width" constant="120" id="svA-ei-SIh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bO-pd-UjB" userLabel="Button Container View">
+                                <rect key="frame" x="20" y="253.5" width="40" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-H0-dO6" userLabel="Audio Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="audioOn">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="audioOff"/>
+                                        <connections>
+                                            <action selector="audioButtonPressed:" destination="8US-Le-ni6" eventType="touchUpInside" id="oWa-sX-pyz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-BZ-pbe" userLabel="Video Button">
+                                        <rect key="frame" x="0.0" y="60" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="videoOn">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="videoOff"/>
+                                        <connections>
+                                            <action selector="videoButtonPressed:" destination="8US-Le-ni6" eventType="touchUpInside" id="Sdg-bf-6tj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-zC-XwF" userLabel="Hangup Button">
+                                        <rect key="frame" x="0.0" y="120" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="hangup">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hangupButtonPressed:" destination="8US-Le-ni6" eventType="touchUpInside" id="vCe-m4-fER"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4x0-4u-O3u"/>
+                                    <constraint firstAttribute="width" constant="40" id="r8S-P3-u8v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L65-qy-cLf" firstAttribute="top" secondItem="wf6-4b-DRe" secondAttribute="bottom" constant="28" id="2pm-si-m4d"/>
+                            <constraint firstAttribute="centerY" secondItem="9bO-pd-UjB" secondAttribute="centerY" id="KBc-mA-Ut9"/>
+                            <constraint firstItem="oj2-64-dJ9" firstAttribute="leading" secondItem="Hnf-We-kpw" secondAttribute="leading" id="ivR-ae-Xml"/>
+                            <constraint firstAttribute="trailing" secondItem="oj2-64-dJ9" secondAttribute="trailing" id="kqi-Hq-UFM"/>
+                            <constraint firstItem="9bO-pd-UjB" firstAttribute="leading" secondItem="Hnf-We-kpw" secondAttribute="leading" constant="20" id="oki-VL-mb8"/>
+                            <constraint firstAttribute="trailing" secondItem="wf6-4b-DRe" secondAttribute="trailing" constant="28" id="qkl-bz-vnU"/>
+                            <constraint firstItem="oj2-64-dJ9" firstAttribute="top" secondItem="Hnf-We-kpw" secondAttribute="top" id="zHq-DJ-XGT"/>
+                            <constraint firstItem="L65-qy-cLf" firstAttribute="top" secondItem="oj2-64-dJ9" secondAttribute="bottom" id="zfw-cf-MZM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QPY-34-PeD"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="audioButton" destination="HYZ-H0-dO6" id="7G0-fg-hbX"/>
+                        <outlet property="buttonContainerView" destination="9bO-pd-UjB" id="tUE-jI-VNI"/>
+                        <outlet property="buttonContainerViewLeftConstraint" destination="oki-VL-mb8" id="Xga-Xo-KRX"/>
+                        <outlet property="hangupButton" destination="p31-zC-XwF" id="aor-iz-wDb"/>
+                        <outlet property="localView" destination="wf6-4b-DRe" id="hM8-as-4gq"/>
+                        <outlet property="localViewBottomConstraint" destination="2pm-si-m4d" id="bRS-Qj-rBV"/>
+                        <outlet property="localViewHeightConstraint" destination="X2Y-ka-DkA" id="xyY-72-oUp"/>
+                        <outlet property="localViewRightConstraint" destination="qkl-bz-vnU" id="fTU-D3-INu"/>
+                        <outlet property="localViewWidthConstraint" destination="svA-ei-SIh" id="bqk-EV-peV"/>
+                        <outlet property="remoteView" destination="oj2-64-dJ9" id="Js2-Am-UIL"/>
+                        <outlet property="remoteViewBottomConstraint" destination="zfw-cf-MZM" id="GeI-E2-Flm"/>
+                        <outlet property="remoteViewLeftConstraint" destination="ivR-ae-Xml" id="LMB-Bp-cAe"/>
+                        <outlet property="remoteViewRightConstraint" destination="kqi-Hq-UFM" id="KWD-mW-OwE"/>
+                        <outlet property="remoteViewTopConstraint" destination="zHq-DJ-XGT" id="kuj-Mq-cPK"/>
+                        <outlet property="videoButton" destination="cCB-BZ-pbe" id="9Nv-0x-3tq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wN1-tJ-vb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="817"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audioOff" width="16" height="17"/>
+        <image name="audioOn" width="13" height="17"/>
+        <image name="hangup" width="25" height="9"/>
+        <image name="videoOff" width="19" height="19"/>
+        <image name="videoOn" width="18" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module JeffSamplePod {
+  umbrella header "JeffSamplePod-umbrella.h"
+
+  export *
+  module * { export * }
+}

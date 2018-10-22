@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RingerView" customModule="AppRTCSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-yE-f0j">
+                    <rect key="frame" x="0.0" y="70" width="375" height="167"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JWCHAT VIDEO CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC2-T8-MSO">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LA-sn-pkD">
+                            <rect key="frame" x="0.0" y="58.5" width="375" height="50"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALLING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87m-kD-MdS">
+                            <rect key="frame" x="0.0" y="116.5" width="375" height="50.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kce-SE-Dvw">
+                    <rect key="frame" x="93.5" y="257" width="187.5" height="187.5"/>
+                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5O-KK-v1C">
+                    <rect key="frame" x="150" y="514" width="75" height="75"/>
+                    <state key="normal" backgroundImage="end-call"/>
+                    <connections>
+                        <action selector="endCallButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="u8x-P8-xFd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fx2-yE-f0j" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="1vk-Xn-KY3"/>
+                <constraint firstItem="Kce-SE-Dvw" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="9VK-Bg-trj"/>
+                <constraint firstItem="fx2-yE-f0j" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:4" id="EEe-gF-IB2"/>
+                <constraint firstItem="r5O-KK-v1C" firstAttribute="centerX" secondItem="Kce-SE-Dvw" secondAttribute="centerX" id="Fuf-O1-4Wf"/>
+                <constraint firstItem="Kce-SE-Dvw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="IyO-bW-9gY"/>
+                <constraint firstItem="r5O-KK-v1C" firstAttribute="top" secondItem="Kce-SE-Dvw" secondAttribute="top" multiplier="2" id="Ja7-sQ-sw6"/>
+                <constraint firstItem="Kce-SE-Dvw" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="aSj-QS-gON"/>
+                <constraint firstItem="Kce-SE-Dvw" firstAttribute="top" secondItem="fx2-yE-f0j" secondAttribute="bottom" constant="20" id="eMc-OI-Hay"/>
+                <constraint firstItem="r5O-KK-v1C" firstAttribute="width" secondItem="Kce-SE-Dvw" secondAttribute="width" multiplier="1:2.5" id="f4d-vd-E8h"/>
+                <constraint firstItem="fx2-yE-f0j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="gqX-LL-Xil"/>
+                <constraint firstItem="fx2-yE-f0j" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="nAq-jL-1ne"/>
+                <constraint firstItem="r5O-KK-v1C" firstAttribute="height" secondItem="Kce-SE-Dvw" secondAttribute="height" multiplier="1:2.5" id="t9R-x0-B81"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageViewUser" destination="Kce-SE-Dvw" id="W4O-Kc-3LO"/>
+                <outlet property="labelName" destination="0LA-sn-pkD" id="NTS-Vh-sZT"/>
+                <outlet property="labelType" destination="fC2-T8-MSO" id="y7f-P2-mup"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="end-call" width="128" height="128"/>
+    </resources>
+</document>

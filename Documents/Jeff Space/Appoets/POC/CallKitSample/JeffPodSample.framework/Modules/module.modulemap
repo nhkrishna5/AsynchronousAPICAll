@@ -1,0 +1,11 @@
+framework module JeffPodSample {
+  umbrella header "JeffPodSample.h"
+
+  export *
+  module * { export * }
+}
+
+module JeffPodSample.Swift {
+    header "JeffPodSample-Swift.h"
+    requires objc
+}
